@@ -5,6 +5,7 @@
     <title> Ejercicio1 / Viernes 4 de Octubre </title>
 </head>
 <style>
+		/* Reset de estilos */
 
 		* {
   	 	 padding: 0; 
@@ -13,35 +14,38 @@
   	 	 list-style:none;
   	 	 text-decoration:none;
   	 	}
-	
+
+		/*Tratando de hacer un efecto difuso, con un div que contiene una imagen*/
+
 		#backgr{
 			position: absolute;
 			top: 0px;
-			left: 0px;
-			max-width: 430px;
-			overflow-x: hidden;
+			left: 0px;	
+			max-width: 510px;
+			max-height: 556px;
+			overflow: hidden;
 			opacity: 0.25;
+
 			}
 
 		#caja{
 			max-width: 350px;
-			padding: 40px;
+			padding: 80px;
 			padding-top: 60px;
-			text-align: justify;
 			background-color: #c4cac1;
-			font-family: arial black;
+			font-family: "arial black", sans-serif;
+			text-align: justify;
 			padding-bottom: 80px;
 			overflow: hidden;
 			}						}
 
 		 .1{
 		 	text-transform: uppercase;
-			font-weight: bolder;
 			}
 
 		 .green{
 		 	color:#a0b56e;
-		 	font-size: 80px;
+		 	font-size: 85px;
 		 	text-transform: uppercase;
 		 	letter-spacing: -5px;
 			}
@@ -63,32 +67,39 @@
 		 .red{
 		 	color:#e9494f;
 		 	text-transform: uppercase;
-		 	font-size:100px;
-		 	line-height:60px;
+		 	font-size:110px;
+		 	line-height:80px;
 		 	letter-spacing: -5px;
 		 }
 
 		 .blue2{
 		 	color:#278aa2;
-		 	font-size: 18px;
-		 	font-family: "maiandra GD", sans-serif;
-		 	font-weight: bold;
-		 	letter-spacing: 2.5px;
-		 	line-height: 30px;
+		 	font-size: 20px;
+		 	font-family: "book antiqua", sans-serif;
+		 	font-weight: bolder;
+		 	letter-spacing: 2.3px;
+		 	line-height: 25px;
 		 }
 
 		 .piedepag{
-		 	font-size: 14px;
-		 	font-family: "maiandra GD", sans-serif;
-		 	letter-spacing: -1px;
+		 	display: block;
+		 	font-size: 15px;
+		 	font-family: "book antiqua", sans-serif;
+		 	letter-spacing: 1px;
+		 	line-height: 15px;
 		 }
 
 </style>
 
 <body>
+
+	<!-- div + con imagen, transparente sobre el div caja, que tiene el texto-->
 <div id="backgr">
-	<img src="images/recicla.jpg">
+	<img src="images/fondoejer.png">
 </div>
+
+	<!-- fin div backgr-->
+
 	<div id="caja">
 		<span class="1">
 			<span class="green">making</span> 
@@ -98,6 +109,9 @@
 
 			<span class="blue2">We build fresh websites and amazing community solutions.</span><br><br>
 
-			<span class="piedepag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, iusto, aspernatur, hic, explicabo deserunt id inventore doloremque animi non laboriosam eligendi consequuntur dolor minus officiis expedita vel corrupti quia pariatur.</span>
+			<span class="piedepag">Amazee Labs at your service! Based on the 
+			modern open source framework Drupal we bring 
+			your brand to the online world. With 
+			competence, confidence and a dash of spice!.</span><br>
 
 </div>
